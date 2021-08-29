@@ -14,12 +14,16 @@ const styles = StyleSheet.create({
     height: 50,
     borderRadius: 5,
     backgroundColor: '#ffff'
- 
+
+  },
+  title: {
+    alignSelf: 'center'
+
   },
   surface: {
     padding: 8,
     height: 160,
-    width: 180,
+    width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 50,
@@ -42,22 +46,28 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     elevation: 4,
   },
-  dividerCol: {
-    padding: 0,
-    alignItems: 'center'
 
-  },
   cardlogo: {
-    paddingTop: 120,
-    height: '60%',
-    backgroundColor: '#4791db',
-    elevation: 0
+    height: '40%',
+    backgroundColor: '#ffff',
 
   },
-  carbtn:{
+  cardlogo1: {
+    padding:10,
+    height: '10%',
+    backgroundColor: '#ffff',
+
+  },
+  cardlogo2: {
+    padding:50,
+    height: '50%',
+    opacity: 0.8
+
+  },
+  carbtn: {
     paddingTop: 20,
     height: '20%',
-    backgroundColor: '#4791db',
+    backgroundColor: 'transparent',
     elevation: 0
 
   },
@@ -68,7 +78,7 @@ const styles = StyleSheet.create({
     borderRadius: 5
   },
   surfinput: {
-    padding: 10,
+    padding: 50,
     alignSelf: 'center',
     opacity: 0.6,
     width: '80%',
@@ -76,15 +86,14 @@ const styles = StyleSheet.create({
 
   },
   logoImage: {
-    padding: 1,
-    borderRadius: 10,
-    alignContent: 'center',
-    position: 'absolute',
-    height: '80%',
-    width: '100%',
-    backgroundColor: '#ffff'
+    alignSelf: 'center',
+    height: 50,
+    width: 400,
   },
-
+  image: {
+    height: '100%',
+    justifyContent: "center"
+  },
   loginScreen: {
     height: '100%',
     width: '100%',
