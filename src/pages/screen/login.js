@@ -5,16 +5,22 @@ import { TextInput } from 'react-native-paper';
 import { Button, Card, Surface, Title } from 'react-native-paper';
 
 
-const Login = () => {
+const Login = ({ navigation }) => {    
 
-    const [user, setUser] = useState('Digite o Login');
-    const [password, setPassword] = useState('**********');
+    const [user, setUser] = useState('fabricio');
+    const [password, setPassword] = useState('1234');
+    const [logado, setLogado] = useState(false);
 
-    function getLogin(navigation) {
+    function getLogin() {
+
         if(user=='fabricio'&password==1234){
-                       
-            console.log('Acesso liberado')
-            navigation.navigate('Details')
+
+            setLogado({logado:true})
+            console.log(logado)
+
+            navigation.navigate('Home')
+
+            
 
         }else{
 
