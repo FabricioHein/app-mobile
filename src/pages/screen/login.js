@@ -15,7 +15,7 @@ const Login = ({ navigation }) => {
 
         if(user=='fabricio'&password==1234){
 
-            setLogado({logado:true})
+            setLogado(true)
             console.log(logado)
 
             navigation.navigate('Home')
@@ -54,7 +54,6 @@ const Login = ({ navigation }) => {
                         value={user}
                         onChangeText={user => setUser(user)}
                     />
-                    <Text> Digite a senha</Text>
                     <TextInput
                         label="Senha"
                         value={password}

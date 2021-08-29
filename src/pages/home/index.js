@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import IconMenu from '../../components/icon/iconButton/iconMenu';
-import Header from '../../components/header/header';
 import style from '../../styles/style'
 import { Surface, Divider } from 'react-native-paper';
 import { Grid, Col} from 'react-native-easy-grid';
@@ -9,7 +8,6 @@ import { Grid, Col} from 'react-native-easy-grid';
 const Home = () => {
   return (
     <View>
-            <Header title='Contsys' />    
     <Grid >
     <Col>
     <View style={style.contener}>

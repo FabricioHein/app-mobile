@@ -9,15 +9,15 @@ const styles = StyleSheet.create({
   },
   button: {
     alignSelf: 'center',
-    alignContent: 'center',
     width: '50%',
-    height: 50,
+    height: 38,
     borderRadius: 5,
     backgroundColor: '#ffff'
 
   },
   title: {
-    alignSelf: 'center'
+    alignSelf: 'center',
+    fontSize: 9
 
   },
   surface: {
@@ -73,22 +73,22 @@ const styles = StyleSheet.create({
   },
   input: {
     alignSelf: 'center',
-    width: '90%',
+    width: '99%',
     backgroundColor: '#fff',
     borderRadius: 5
   },
   surfinput: {
-    padding: 50,
+    padding: 10,
     alignSelf: 'center',
     opacity: 0.6,
-    width: '90%',
+    width: 350,
     borderRadius: 5,
 
   },
   logoImage: {
-    alignSelf: 'center',
-    height: 50,
-    width: 400,
+    alignSelf:'center',
+    height: 22,
+    width: 150,
   },
   image: {
     height: '100%',
