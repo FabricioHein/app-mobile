@@ -13,7 +13,6 @@ function App() {
       {/* <Home/>  */}
      
      <Login/>
-     {/* <Rota></Rota> */}
     </SafeAreaView>
 
   );

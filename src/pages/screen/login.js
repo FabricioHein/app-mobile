@@ -10,10 +10,16 @@ const Login = () => {
     const [user, setUser] = useState('Digite o Login');
     const [password, setPassword] = useState('**********');
 
-    function a() {
-        console.log(user, password)
+    function getLogin(navigation) {
+        if(user=='fabricio'&password==1234){
+                       
+            console.log('Acesso liberado')
+            navigation.navigate('Details')
 
+        }else{
 
+            console.log('Erro')
+        }
     }
 
     return (
@@ -53,7 +59,7 @@ const Login = () => {
                 </Surface>
                 <Card style={style.carbtn}>
                     <Button style={style.button}
-                        onPress={a}
+                        onPress={getLogin}
                     >
                         Acessar
                     </Button>
