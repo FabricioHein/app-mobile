@@ -11,7 +11,6 @@ const Input = (props) => {
       mode={props.mode}
       label={props.label}
       placeholder={props.placeholder}
-      onChangeText={text => setText(text)}
       style={style.input}
 
     />

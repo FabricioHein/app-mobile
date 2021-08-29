@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
   cardlogo2: {
     padding:50,
     height: '50%',
-    opacity: 0.8
+    backgroundColor: '#0382b3'
 
   },
   carbtn: {
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     padding: 50,
     alignSelf: 'center',
     opacity: 0.6,
-    width: '80%',
+    width: '90%',
     borderRadius: 5,
 
   },
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   loginScreen: {
     height: '100%',
     width: '100%',
-    backgroundColor: '#4791db'
+    backgroundColor: '#0382b3'
   },
 
 })

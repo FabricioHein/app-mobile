@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, Image, ImageBackground } from 'react-native';
 import style from '../../styles/style'
-import Input from '../../components/input/input';
-import InputPassword from '../../components/input/inputPassword';
-import { Button, Card, Avatar, Surface, Title } from 'react-native-paper';
+import { TextInput } from 'react-native-paper';
+import { Button, Card, Surface, Title } from 'react-native-paper';
 
-const logo = {
-    alignSelf: 'center'
-}
 
 const Login = () => {
+
+    const [user, setUser] = useState('Digite o Login');
+    const [password, setPassword] = useState('**********');
+
+    function a() {
+        console.log(user, password)
+
+
+    }
+
     return (
         <View style={style.loginScreen}>
             <Card style={style.cardlogo}>
-                <ImageBackground source={require('../../assets/contabilidade-contsys.png')} resizeMode="cover" style={style.image}>
-
+                <ImageBackground
+                    source={require('../../assets/contabilidade-contsys.png')}
+                    resizeMode="cover"
+                    style={style.image}>
                 </ImageBackground>
 
             </Card>
@@ -29,22 +37,26 @@ const Login = () => {
             </Card>
             <Card style={style.cardlogo2}>
                 <Surface style={style.surfinput}>
-                    <Text > Digite o seu Login</Text>
-
-                    <Input
-                        label={'Login Cliente'}
-                        placeholder={'Digite o Login'}
+                    <TextInput
+                        label="Email"
+                        value={user}
+                        onChangeText={user => setUser(user)}
                     />
                     <Text> Digite a senha</Text>
-
-                    <InputPassword
-                        label={'Senha'}
-                        placeholder={'Digite o Login'}
+                    <TextInput
+                        label="Senha"
+                        value={password}
+                        onChangeText={password => setPassword(password)}
                     />
+
 
                 </Surface>
                 <Card style={style.carbtn}>
-                    <Button style={style.button}> Acessar</Button>
+                    <Button style={style.button}
+                        onPress={a}
+                    >
+                        Acessar
+                    </Button>
                 </Card>
             </Card>
         </View>
