@@ -2,9 +2,11 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
-    flex: 2,
+    width: '100%',
+    height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#fff'
 
   },
   button: {
@@ -22,11 +24,10 @@ const styles = StyleSheet.create({
   },
   surface: {
     padding: 8,
-    height: 160,
+    height: 300,
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-    elevation: 50,
   },
   text: {
     color: 'black',

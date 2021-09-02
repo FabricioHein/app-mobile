@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, Image, ImageBackground } from 'react-native';
 import style from '../../styles/style'
 import { TextInput } from 'react-native-paper';
@@ -11,19 +11,21 @@ const Login = ({ navigation }) => {
     const [password, setPassword] = useState('1234');
     const [logado, setLogado] = useState(false);
 
+    useEffect(()=>{
+        setLogado(true)
+    },[logado]
+    )
+
+        
     function getLogin() {
 
-        if(user=='fabricio'&password==1234){
-
+        if(user=='fabricio'&password==1234){    
+           
             setLogado(true)
-            console.log(logado)
 
-            navigation.navigate('Home')
-
-            
+            navigation.navigate('Home - Contsys')           
 
         }else{
-
             console.log('Erro')
         }
     }
@@ -56,6 +58,8 @@ const Login = ({ navigation }) => {
                     />
                     <TextInput
                         label="Senha"
+                        secureTextEntry
+                        right={<TextInput.Icon name="eye" />}
                         value={password}
                         onChangeText={password => setPassword(password)}
                     />
@@ -75,7 +79,5 @@ const Login = ({ navigation }) => {
 
     );
 };
-
-
 
 export default Login;
