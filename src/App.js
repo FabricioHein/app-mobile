@@ -6,13 +6,13 @@ import Rota from './routes/routes';
 import styles from './styles/style';
 
 function App() {
-  
+
 
   return (
     <SafeAreaView style={styles.contener}>
-      {/* <Home/>  */}
-     
-     <Login/>
+      {/* <Home /> */}
+
+      <Login />
     </SafeAreaView>
 
   );

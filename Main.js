@@ -19,9 +19,7 @@ export default function Main() {
   return (
     <StoreProvider  store={store}>
       <PaperProvider theme={theme} >
-        <Rota>
-        <App />
-        </Rota>
+         <Rota />
       </PaperProvider>      
     </StoreProvider>
   );
